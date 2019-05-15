@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="beetle.UserMapper">
+  
+  <insert id="save">
+  
+  insert into user(name,age) values(#{name},#{age})
+  
+  </insert>
+  
+ <!-- <select id="queryAll" resultType="beetle.User"> -->
+ <select id="queryAll" resultType="User">
+ 
+ select * from user
+ 
+ </select>
+  
+  </mapper>
