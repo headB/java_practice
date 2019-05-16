@@ -5,7 +5,8 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/kumanxuan"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="resource"/>
-	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.47.jar" sourcepath="/Users/lizhixuan/Downloads/mysql-connector-java-5.1.47/mysql-connector-java-5.1.47-bin.jar"/>
 	<classpathentry kind="lib" path="webapp/WEB-INF/lib/servlet-api.jar" sourcepath="/Users/lizhixuan/Downloads/apache-tomcat-8.5.40-src.zip"/>
+	<classpathentry kind="lib" path="webapp/lib/mybatis-3.4.5.jar"/>
+	<classpathentry kind="lib" path="webapp/lib/mysql-connector-java-5.1.47.jar"/>
 	<classpathentry kind="output" path="webapp/WEB-INF/classes"/>
 </classpath>

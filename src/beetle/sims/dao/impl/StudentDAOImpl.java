@@ -4,13 +4,14 @@ import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 
+import beetle.sims.dao.IStudentDao;
 import beetle.sims.domain.Student;
 import beetle.util.MybatisUtil;
 
 //我记得了，这个位置呢，就是，负责规范增删改查的啦。！记得的啦。！
 //这里是实现接口的方法
 
-public class StudentDAOImpl {
+public class StudentDAOImpl implements IStudentDao {
 	
 	
 	
