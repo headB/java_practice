@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="beetle.mapper.UserMapper">
+  
+  <insert id="save">
+  
+  insert into user(username,age) values(#{username},#{age})
+  
+  </insert>
+  
+ <!-- <select id="queryAll" resultType="beetle.User"> -->
+ <!-- resultMap的用法主要就是用于当列名和对象domain不一样的字段名的时候采用的，
+ 然后是还是在SQL的映射XML文件里面写编写便签 
+   resMap >  id  然后其他的是   result   columns 数据库字段   property 对象的属性值 -->
+ <select id="queryAll" resultType="Student">
+ 
+ select * from user
+ 
+ </select>
+  
+  </mapper>

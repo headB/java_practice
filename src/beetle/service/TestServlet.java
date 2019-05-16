@@ -1,4 +1,4 @@
-package beetle.servlet;
+package beetle.service;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -36,6 +36,8 @@ public class TestServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		//super.service(req, res);
 		System.out.println("six six six");
+		
+		
 		
 		req.setAttribute("six", "six! 51凡66666！");
 		

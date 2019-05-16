@@ -24,7 +24,7 @@ public class Student {
 	 * @param args
 	 */
 	
-	private String name = null;
+	private String username = null;
 	private Integer age = null;
 	private Integer id = null;
 	

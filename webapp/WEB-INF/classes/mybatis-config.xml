@@ -4,24 +4,39 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
+
+<properties resource="db.properties"></properties>
+
+
+
+<!-- 13-类型别名  所以呢？下面主要应用于  resultType  ?? -->
 <typeAliases>
 
-<package name="beetle"/>
+<package name="beetle.sims.domain"/>
 
 </typeAliases>
 
   <environments default="dev">
     <environment id="dev">
       <transactionManager type="JDBC"/>
+      <!-- 这里已经是设置连接池的地方了  -->
       <dataSource type="POOLED">
-        <property name="driver" value="com.mysql.jdbc.Driver"/>
+       <!--  <property name="driver" value="com.mysql.jdbc.Driver"/>
         <property name="url" value="jdbc:mysql://192.168.113.1:3306/javaweb?characterEncoding=utf-8"/>
         <property name="username" value="root"/>
-        <property name="password" value="Kumanxuan@gzitcast123"/>
+        <property name="password" value="Kumanxuan@gzitcast123"/> -->
+        
+        
+        <property name="driver" value="${driverClassName}"/>
+        <property name="url" value="${url}"/>
+        <property name="username" value="${username}"/>
+        <property name="password" value="${password}"/>
+        
+        
       </dataSource>
     </environment>
   </environments>
   <mappers>
-    <mapper resource="beetle/UserMapper.xml"/>
+    <mapper resource="beetle/mapper/UserMapper.xml"/>
   </mappers>
 </configuration>
