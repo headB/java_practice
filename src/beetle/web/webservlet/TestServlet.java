@@ -28,6 +28,10 @@ public class TestServlet extends HttpServlet {
 		
 		t1.save();
 		
+		req.setAttribute("six", "six");
+		
+		req.getRequestDispatcher("NewFile.jsp").forward(req, resp);
+		
 	}
 
 }
