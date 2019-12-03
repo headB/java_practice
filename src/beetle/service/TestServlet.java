@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.ServletRequest;
@@ -29,6 +30,15 @@ import javax.servlet.http.HttpServlet;
 
 @WebServlet("/beetle123")
 public class TestServlet extends HttpServlet {
+	
+	@Override
+	public void init(ServletConfig config) throws ServletException {
+		// TODO Auto-generated method stub
+		super.init(config);
+		
+		System.out.println("我就是我,是需要初始化的我!");
+		
+	}
 	
 	
 	@Override

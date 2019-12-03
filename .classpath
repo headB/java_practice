@@ -5,6 +5,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/kumanxuan"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="resource"/>
-	<classpathentry kind="lib" path="webapp/WEB-INF/lib/servlet-api.jar" sourcepath="/Users/lizhixuan/Downloads/apache-tomcat-8.5.40-src.zip"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/servlet-api.jar" sourcepath="/Users/lizhixuan/java_learn/apache-tomcat-8.5.40-src.zip"/>
 	<classpathentry kind="output" path="webapp/WEB-INF/classes"/>
 </classpath>

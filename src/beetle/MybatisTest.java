@@ -30,6 +30,8 @@ public class MybatisTest {
 //	List<User> users =  s1.selectList("beetle.UserMapper.queryAll");
 	System.out.println(s1.selectList("beetle.UserMapper.queryAll"));
 	
+//	s1.selectO
+	
 	//然后就是提交事务
 	s1.commit();
 	s1.close();

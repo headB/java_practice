@@ -12,10 +12,14 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/test_form")
 public class FormTesetServlet extends HttpServlet {
 
+	
+	
+	
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 //		super.service(req, resp);
+		
 		
 		
 		//测试调用表单
@@ -24,7 +28,10 @@ public class FormTesetServlet extends HttpServlet {
 		
 		//设置编码预防乱码
 		
-		req.setCharacterEncoding("utf-8");
+		
+		
+		byte b2 = 4 ;
+		byte b3 = 5;
 		
 		
 		//原来这个地方呢，就是，get和post都是通杀的，意思就是，这个getParameter，
@@ -32,6 +39,8 @@ public class FormTesetServlet extends HttpServlet {
 		System.out.println(req.getParameter("name"));
 		
 		req.getRequestDispatcher("/TestForm.jsp").forward(req, resp);
+		
+//		resp.sendRedirect(location);
 		
 		
 	}

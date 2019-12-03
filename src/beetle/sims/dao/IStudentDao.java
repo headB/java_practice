@@ -10,4 +10,6 @@ public interface IStudentDao {
 	
 	void addUser();
 	
+	void delUser();
+	
 }

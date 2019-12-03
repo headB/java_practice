@@ -2,6 +2,7 @@ package beetle.web.webservlet;
 
 import java.io.IOException;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,6 +15,14 @@ import beetle.service.impl.TestServiceImpl;
 @WebServlet("/lizhixuan")
 public class TestServlet extends HttpServlet {
 	
+	@Override
+	public void init(ServletConfig config) throws ServletException {
+		// TODO Auto-generated method stub
+		super.init(config);
+		
+		System.out.println("我就是我,可以提供初始化功能的我!");
+		
+	}
 	
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

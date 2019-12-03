@@ -19,5 +19,11 @@
  select * from user
  
  </select>
+ 
+ <select id="queryOne" resultType="Student" >
+ 
+ 	select * from user
+ 
+ </select>
   
   </mapper>
